@@ -1,0 +1,8 @@
+#like-button:hover
+{cursor: pointer;color:#FECD08;}
+#like-button.not-liked
+{color: #161616;}
+#like-button.not-liked:hover
+{color: #FECD08;}
+#like-button.liked
+{color: #FECD08;}

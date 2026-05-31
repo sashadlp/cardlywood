@@ -1,0 +1,21 @@
+form {
+    border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+margin: 30px 20px;
+}
+label {
+display: block;
+margin-bottom: 8px;
+
+}
+input {
+height: 20px;
+width: 40%;}
+
+button {
+margin-left: 20px;
+margin-bottom: 30px;
+padding: 10px 32px;
+cursor: pointer;}

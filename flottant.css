@@ -1,0 +1,47 @@
+.btn-flotant {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: green;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.btn-flotant img {
+    width: 40px;  
+    height: 40px;
+    object-fit: contain;
+}
+dialog {
+    
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #000000;
+    box-shadow: 0 10px 30px rgb(55, 213, 11);
+
+    color: aliceblue;
+    width: 90%;          
+    max-width: 500px;    
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-height: 80vh;
+    overflow-y: auto;    /* Ajoute un scroll interne si le contenu est trop long */
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.545);
+    backdrop-filter: blur(3px); /* Optionnel : ajoute un léger flou artistique en arrière-plan */
+}

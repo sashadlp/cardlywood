@@ -1,0 +1,17 @@
+.affiche-detail{
+    margin-left: 15px;
+}
+.bloc-infos{
+margin-left: 15px;
+}
+.body-detail{
+    background-color: black;
+}
+
+.api-gallery{
+    color: #ffe600; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin-bottom: 20px;
+    margin-left: 15px;
+}

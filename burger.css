@@ -1,0 +1,32 @@
+#boutonmenu {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+#Menu { 
+    position: fixed;
+    top: 0;
+    left: -250px; /*position de notre menu quand il n'est pas ouvert*/
+    width: 250px;/*largeur*/
+    height: 100%;/*hauteur*/
+    background-color: rgb(0, 0, 0);/*couleur du fond*/
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;/*direction de notre menue*/
+    gap: 20px;
+    transition: transform 0.3s ease;/*transition pour ouvrir le menue*/
+    transform: translateX(0);
+    z-index: 1000;
+}
+
+
+#Menu.show { 
+    transform: translateX(250px);/*decale le menu pour qu'il soit visible*/
+}
+

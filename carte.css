@@ -1,0 +1,46 @@
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.card-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+.card-image-wrapper {
+    position: relative;
+}
+
+.like-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff; /* Couleur du cœur vide par défaut */
+    text-shadow: 0 0 3px #000; 
+    cursor: pointer;
+    transition: transform 0.15s ease, color 0.3s ease;
+}
+
+/* animation survol*/
+.like-btn:hover {
+    color: #FECD08; 
+    transform: scale(1.1);
+}
+
+/*bouton liker*/
+.like-btn.liked {
+    color: #fe0808;
+    text-shadow: none;
+}
+

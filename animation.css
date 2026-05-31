@@ -1,0 +1,157 @@
+.badge-nouveau{
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.15)}
+    100%{transform: scale(1);}
+}
+
+/*Animation survol logo*/
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    place-items: center;
+    overflow: hidden; /* Pour garder l'image propre */
+    transition-duration: 0.2s;
+    transition-property: background-color, transform;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s; /* L'animation attend 1s avant de se déclencher au survol */
+}
+
+.box2:hover {
+    background-color: rgb(94, 10, 10);
+    transform: scale(1.5); 
+}
+
+.box2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-debut{
+        animation: slide 2s ease-out;
+
+}
+@keyframes slide {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.badge-nouveau{
+    display: inline-block;
+    background: #ff0000;
+    color: rgb(69, 37, 37);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.15)}
+    100%{transform: scale(1);}
+}
+.projecteur {
+    position: fixed;
+    bottom: -50px; 
+    width: 150px;
+    height: 150vh; 
+    
+    background: linear-gradient(to top, rgba(247, 255, 3, 0.558) 0%, rgba(255, 255, 255, 0) 80%);
+    
+    clip-path: polygon(0% 0%, 100% 0%, 60% 100%, 40% 100%);
+    
+    transform-origin: bottom center;
+    .box2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    place-items: center;
+    overflow: hidden; /* Pour garder l'image propre */
+    transition-duration: 0.2s;
+    transition-property: background-color, transform;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s; /* L'animation attend 1s avant de se déclencher au survol */
+}
+
+.box2:hover {
+    background-color: rgb(94, 10, 10);
+    transform: scale(1.5); 
+}
+
+.box2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    .box2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    place-items: center;
+    overflow: hidden; /* Pour garder l'image propre */
+    transition-duration: 0.2s;
+    transition-property: background-color, transform;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s; /* L'animation attend 1s avant de se déclencher au survol */
+}
+
+.box2:hover {
+    background-color: rgb(94, 10, 10);
+    transform: scale(1.5); 
+}
+
+
+}
+
+.proj-gauche {
+    left: 20%;
+    animation: balayageGauche 6s ease-in-out infinite alternate;
+}
+
+.proj-droite {
+    right: 20%;
+    animation: balayageDroite 7s ease-in-out infinite alternate;
+}
+
+@keyframes balayageGauche {
+    0% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes balayageDroite {
+    0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}

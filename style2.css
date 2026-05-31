@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    gap: 20px;
+   
+    flex-wrap: wrap; 
+}
+
+.section1 {
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    align-items: center;
+    
+}
+
+footer{
+    background-color: red;
+    height: 90px;
+    display: flex;     
+    align-items: center;
+}
+.footer-text{
+    margin-left: 45%;
+    align-items: center;
+}
+
+.footer-img{
+    height: 50px;
+    margin-left: 15px;
+}
+
